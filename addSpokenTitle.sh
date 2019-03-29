@@ -22,8 +22,6 @@ else
     echo 'System Preferences -> Accessibility -> Speech, then click on System Voice -> customize'
 fi
 
-exit 1
-
 title=$(ffprobe -loglevel error -show_entries format_tags=title -of default=noprint_wrappers=1:nokey=1 $INPUTFILE)
 
 removeTmpFiles
